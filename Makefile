@@ -1,4 +1,4 @@
-NS = blang
+NS = ghcr.io/philippdrebes
 REPO = latex
 IMAGE = $(NS)/$(REPO)
 

@@ -42,5 +42,7 @@ jobs:
         context: .
         file: Dockerfile.ubuntu
         push: true
-        tags: ubuntu
+        tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:ubuntu
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
     
